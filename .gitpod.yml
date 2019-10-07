@@ -1,10 +1,8 @@
-# The Docker image to run your workspace in. Defaults to gitpod/workspace-full
-image: <your-workspace-image>
-# Command to start on workspace startup (optional)
+image:
+  file: .gitpod.dockerfile  
 tasks:
   - init: yarn install
-    command: yarn build
-# Ports to expose on workspace startup (optional)
+    command: cp -r /workspace/MydatascienceEnv/.jupyter /home/gitpod/
 ports:
   - port: 8000
     onOpen: open-preview    
