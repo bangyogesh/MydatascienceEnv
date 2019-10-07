@@ -1,7 +1,7 @@
 image:
   file: dockerfile  
 tasks:
-  - command: gp open index.html
+  - command: gp open /workspace/MydatascienceEnv/index.html
     command: cp -r /workspace/MydatascienceEnv/.jupyter /home/gitpod/
 ports:
   - port: 8000
