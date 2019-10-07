@@ -3,6 +3,7 @@ image:
 tasks:
   - init: yarn install
     command: cp -r /workspace/MydatascienceEnv/.jupyter /home/gitpod/
+    command: python /workspace/MydatascienceEnv/Tutorials/WebServer/server.py
 ports:
   - port: 8000
     onOpen: open-preview    
