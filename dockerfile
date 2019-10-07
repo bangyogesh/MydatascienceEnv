@@ -12,8 +12,8 @@ RUN apt-get update && apt-get install -y \
     && /opt/conda/bin/pip install pylint \
        # [Optional] Add sudo support for the non-root user
     && apt-get install -y sudo \
-    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
-    && chmod 0440 /etc/sudoers.d/$USERNAME \
+    && echo gitpod ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/gitpod\
+    && chmod 0440 /etc/sudoers.d/gitpod \
     #
     # Clean up
     && apt-get autoremove -y \
