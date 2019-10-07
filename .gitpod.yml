@@ -1,9 +1,8 @@
 image:
   file: dockerfile  
 tasks:
-  - init: yarn install
+  - init: python /workspace/MydatascienceEnv/Tutorials/WebServer/server.py
     command: cp -r /workspace/MydatascienceEnv/.jupyter /home/gitpod/
-    command: python /workspace/MydatascienceEnv/Tutorials/WebServer/server.py
 ports:
   - port: 8000
     onOpen: open-preview    
