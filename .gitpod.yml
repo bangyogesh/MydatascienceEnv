@@ -1,7 +1,7 @@
 image:
   file: dockerfile  
 tasks:
-  - init: gp preview https://bangyogesh.github.io/datascience-dev-container.html
+  - init: python3 -m http.server 8080 --bind 0.0.0.0 
     command: cp -r /workspace/MydatascienceEnv/.jupyter /home/gitpod/
 ports:
   - port: 8000
