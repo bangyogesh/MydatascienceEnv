@@ -1,5 +1,5 @@
 image:
-  file: .gitpod.dockerfile  
+  file: dockerfile  
 tasks:
   - init: yarn install
     command: cp -r /workspace/MydatascienceEnv/.jupyter /home/gitpod/
