@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     # Install pylint
     && /opt/conda/bin/pip install pylint \
        # [Optional] Add sudo support for the non-root user
+    && /opt/conda/bin/conda install keras \  
     && apt-get install -y sudo \
     && echo gitpod ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/gitpod\
     && chmod 0440 /etc/sudoers.d/gitpod \
