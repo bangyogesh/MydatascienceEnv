@@ -11,10 +11,10 @@ RUN apt-get update && apt-get install -y \
     # Install pylint
     && /opt/conda/bin/pip install pylint \
        # [Optional] Add sudo support for the non-root user
+    && /opt/conda/bin/pip install  opencv-python  \
     && /opt/conda/bin/conda install keras \  
     && /opt/conda/bin/conda install tensorflow \  
     && /opt/conda/bin/conda install -c pytorch pytorch \
-    && /opt/conda/bin/conda install -c conda-forge/label/gcc7 opencv \
     && apt-get install -y sudo \
     && echo gitpod ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/gitpod\
     && chmod 0440 /etc/sudoers.d/gitpod \
