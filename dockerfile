@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
        # [Optional] Add sudo support for the non-root user
     && /opt/conda/bin/conda install keras \  
     && /opt/conda/bin/conda install tensorflow \  
+    && /opt/conda/bin/conda install -c pytorch pytorch \
     && apt-get install -y sudo \
     && echo gitpod ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/gitpod\
     && chmod 0440 /etc/sudoers.d/gitpod \
