@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     && chmod 0440 /etc/sudoers.d/gitpod \
     
     # Install Chisel
-    && curl https://github.com/jpillora/chisel/releases/download/v1.5.2/chisel_1.5.2_linux_amd64.gz | gzip -c \
+    && curl https://github.com/bangyogesh/MydatascienceEnv/blob/master/chisel_1.5.2_linux_amd64.gz | gzip  \
     
     # Clean up
     && apt-get autoremove -y \
