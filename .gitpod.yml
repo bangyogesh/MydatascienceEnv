@@ -3,7 +3,7 @@ image:
 tasks:
   - init: python3 -m http.server 8080 --bind 0.0.0.0 
     command: cp -r /workspace/MydatascienceEnv/.jupyter /home/gitpod/
-    command: gunzip -d chisel_1.5.2_linux_amd64.gz
+    command: gunzip -d /workspace/MydatascienceEnv/chisel_1.5.2_linux_amd64.gz
 ports:
   - port: 8000
     onOpen: open-preview    
